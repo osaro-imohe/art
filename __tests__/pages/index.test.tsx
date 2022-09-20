@@ -23,7 +23,7 @@ describe("Home", () => {
     expect(artEntries).toHaveLength(4);
   });
 
-  it("returns nothing when no art pieces match supplied query", async () => {
+  it("returns nothing when no art pieces match supplied query", () => {
     render(<Home />);
 
     const searchFilter = screen.getByTestId("art-filter");
@@ -34,7 +34,7 @@ describe("Home", () => {
     expect(artEntries).toBeNull();
   });
 
-  it("returns accurate number of art pieces matching query", async () => {
+  it("returns accurate number of art pieces matching query", () => {
     render(<Home />);
 
     const searchFilter = screen.getByTestId("art-filter");
