@@ -33,6 +33,7 @@ const Home: NextPage = () => {
             />
           </form>
           <ul className="flex flex-wrap justify-left">
+            {/* TODO: List of art */}
             {filteredData.map(art => (
               <ArtTab art={art} key={art.title} />
             ))}
