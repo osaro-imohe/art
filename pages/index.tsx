@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             {/* TODO: Filter art */}
             <input 
               type="search" 
-              placeholder="Search…"
+              placeholder="Search by title, author or date"
               data-testid="art-filter" 
               onChange={(e) => setFilterParam(e.target.value)}
               className="border w-full my-5 h-12 px-5 rounded-md" 
