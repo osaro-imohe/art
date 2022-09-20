@@ -14,7 +14,7 @@ type ArtProps = {
 }
 
 const ArtTab = ({ art }: ArtProps) => (
-	<div className="sm:w-12/12 md:w-6/12 lg:w-4/12 px-2 py-2">
+	<div className="sm:w-12/12 md:w-6/12 lg:w-4/12 px-2 py-2" data-testid="art-li">
 		<div className="w-full h-96 border-solid border-2 border-zinc-100 rounded-md overflow-hidden">
 			<Image src={art.image_url} alt={art.title} width="100%" height="50%" layout="responsive" objectFit="cover" />
 			<div className="px-2 w-full">
